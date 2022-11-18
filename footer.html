@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .Contact-section{
+            width: 100%;
+            box-sizing: border-box;
+            background-color:rgb(1, 20, 13);
+            position: relative;
+        }
+        .textHead{
+            font-size: 35px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: white;
+            padding-left: 22px;
+            padding-top: 10px;
+        }
+        .text2{
+            text-decoration: none;
+            padding-left: 22px;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            cursor: pointer;
+            background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);    -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .Flexbox{
+            width: 100%;
+            display:flex;
+            flex-direction: row;
+            position:absolute;
+            box-sizing: border-box;
+            justify-content: flex-end;
+            top: 50px;
+        }
+        .inner-flex-items{
+            width: 100px;
+            box-sizing: border-box;
+        }
+        .Link-style>a{
+
+            text-decoration: none;
+            color: #635d5d;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .Link-style{
+            padding: 20px;
+        }
+        .footerLogo{
+            padding-left: 20px;
+            color: #635d5d;
+        }
+        .footerLogo>h4{
+            font-size: 20px;
+        }
+        .footerLogo>a{
+            text-decoration: none;
+            color: #635d5d;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .Maillogo{
+            transform: translateY(10px);
+        }
+        footer{
+            text-align: center;
+            color: #635d5d;
+            font-weight: 700;
+        }
+        footer>p{
+            padding-bottom: 10px;
+        }
+        #Widht{
+            height: 720px;
+            background-color: #b16cea;
+        }
+    </style>
+</head>
+<body>
+    <div id="Widht">
+        <h1>Helo</h1>
+    </div>
+    <div class="Contact-section">
+        <div>
+            <h2 class="textHead">Ready to make something Good?</h2>
+            <a href="www.google.com">Link</a>
+
+        </div>
+        <div class="footerLogo">
+            <h4>Portfolio.</h4>
+            <p style="color: #635d5d;">Kakinada, Andhra pradesh, India</p>
+            <a aria-current="page" href="mailto:Mvsai8790@gmail"><img class="Maillogo" src="mail.svg" width="30" height="30" alt="mail"> mail@gmail.com</a>
+        </div>
+        <div class="Flexbox">
+            <div class="inner-flex-items">
+                <div class="Link-style"><a href="">About</a></div>
+                <div class="Link-style"><a href="">About</a></div>
+                <div class="Link-style"><a href="">About</a></div>
+            </div>
+            <div class="inner-flex-items">
+                <div class="Link-style"><a href="">About</a></div>
+                <div class="Link-style"><a href="">About</a></div>
+                <div class="Link-style"><a href="">About</a></div>
+            </div>
+            <div class="inner-flex-items">
+                <div class="Link-style"><a href="">About</a></div>
+                <div class="Link-style"><a href="">About</a></div>
+                <div class="Link-style"><a href="">About</a></div>
+            </div>
+        </div>
+        <div>
+            <footer>
+                <p> &copy; All rights reserved | Mvsai | Made in <img src="india.svg" alt="india" width="30" height="30" style="position: absolute;bottom: 4px;padding-left: 5px;"> </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

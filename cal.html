@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <script src="https://kit.fontawesome.com/dd541ecb03.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            #bodywrapper{
+                margin-top: 50px;
+                text-align: center;
+                width: 370px;
+                height: 490px;
+                background-color:rgb(46, 44, 44);
+                box-shadow: 3px 4px 4px black;
+                border-radius: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                box-sizing: border-box;
+            }
+            #inputtxt{
+                width: 90%;
+                margin-top: 13px;
+                margin-left: auto;
+                margin-right: auto;
+                height: 100px;
+                border-radius: 6px;
+                background-color: #aaa;
+                font-size: 38px;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 9px black;
+                word-wrap: break-word;
+                text-align: center;
+            }
+            #btnwrapper{
+               margin: 10px;
+               margin-top: 40px;
+               display: grid;
+               grid-template-columns: auto auto auto auto;
+               grid-gap: 5px;
+            }
+            .btns{
+                width: auto;
+                height: 40px;
+                border-radius: 5px;
+                margin-top: 5px;
+                background-color: aliceblue;
+                border: 1px solid #ccc;
+                color: black;
+                font-weight: bolder;
+                font-size: 15px;
+            }
+            #timebox{
+                text-align: center;
+                margin: auto;
+                display: inline-block;
+                margin-top: 10px;
+                background-color: #aaa;
+                width: 120px;
+                height: 45px;
+                border-radius: 5px;
+                font-size: 31px;
+                box-shadow: 0px 2px 5px rgb(34, 33, 33);
+            }
+            sub{
+                font-size: 15px;
+                color: rgb(5, 43, 65);
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            #on{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="bodywrapper">
+            <header>
+                <div id ="intbox">
+                    <input type="text"  id="timebox" disabled>
+                    <div type='text' id="inputtxt" maxlength="20" disabled></div>
+                </div>
+            </header>
+            <main>
+                <div id="btnwrapper">
+                        <button class="btns" id="on">M</button>
+                        <button class="btns" id="clr">C</button>
+                        <button class="btns" id="time">Time</button>
+                        <button class="btns" id="nn" >Theme</button>
+                        <button class="btns" id="n1">1</button>
+                        <button class="btns" id="n2">2</button>
+                        <button class="btns" id="n3" >3</button>
+                        <button class="btns" id="plus" >+</button>
+                        <button class="btns" id="n4" >4</button>
+                        <button class="btns" id="n5" >5</button>
+                        <button class="btns" id="n6" >6</button>
+                        <button class="btns" id="minus" >-</button>
+                        <button class="btns" id="n7" >7</button>
+                        <button class="btns" id="n8" >8</button>
+                        <button class="btns" id="n9" >9</button>
+                        <button class="btns" id="multi" >*</button>
+                        <button class="btns" id="equal" >=</button>
+                        <button class="btns" id="n0" >0</button>
+                        <button class="btns" id="dot" >.</button>
+                        <button class="btns" id="divi" >/</button>
+                </div>
+            </main>
+    </body>
+    <script src="cal.js"></script>
+    <!-- <a href="tel:93900-73771">call</a> -->
+</html>
