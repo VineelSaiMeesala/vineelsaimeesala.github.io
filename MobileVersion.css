@@ -1133,6 +1133,6 @@ html{
     padding: 0px;
   }
   .Certi-box{
-      display: none;
+      display: block;
   }
   }
