@@ -1,9 +1,11 @@
 let laodpage=document.getElementById("loadpg")
 let mainpage=document.getElementById("mainpage")
+let arrow =document.getElementById("arrow-btn")
 setTimeout(Myfunction,4500);
 function Myfunction(){
     laodpage.style.display="none"
     mainpage.style.display="block"
+    arrow.style.display="block"
 }
 var slideIndex = 1;
 showSlides(slideIndex);
