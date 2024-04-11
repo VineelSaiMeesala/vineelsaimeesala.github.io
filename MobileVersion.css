@@ -14,6 +14,7 @@ html{
 .arrow-btn{
     display: none;
 }
+/* Desktop Version*/
 @media screen and (min-width: 900px) {
     .loadpage{
         font-size: 40px;
@@ -253,7 +254,7 @@ html{
     img {vertical-align: middle;}
     /* Slideshow container */
     .slideshow-container {
-      max-width: 800px;
+      max-width: 600px;
       position: relative;
       margin: auto;
     }
@@ -431,7 +432,7 @@ html{
         color: rgb(233, 222, 222);
     }
     .slideshow-container{
-        display: none;
+        display: block;
     }
     .dotbox{
         display: none;
