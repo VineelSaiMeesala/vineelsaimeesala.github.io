@@ -34,7 +34,7 @@ nav a,.header-cta{color:var(--ink);font-size:13px;font-weight:700;text-decoratio
 .portrait-orbit{position:absolute;border-radius:50%;border:1px solid #d6c9f2;z-index:1}
 .orbit-one{width:420px;height:420px}
 .orbit-two{width:500px;height:500px;border-style:dashed;opacity:.75}
-.experience-badge{z-index:3;position:absolute;bottom:30px;left:5%;background:var(--ink);color:white;width:125px;min-height:90px;padding:14px 15px;display:flex;gap:9px;align-items:center;box-shadow:6px 6px 0 var(--orange)}
+.experience-badge{z-index:3;position:absolute;bottom:30px;left:5%;background:var(--ink);color:white;width:132px;min-height:90px;padding:14px 15px;display:flex;gap:9px;align-items:center;box-shadow:6px 6px 0 var(--orange)}
 .experience-badge strong{font-size:27px;letter-spacing:-1px}
 .experience-badge span{font:10px/1.35 "DM Mono",monospace;color:#d5d0db}
 .proof-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding:26px 0;gap:20px}
