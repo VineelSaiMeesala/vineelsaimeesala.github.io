@@ -1,61 +1,13 @@
-let laodpage=document.getElementById("loadpg")
-let mainpage=document.getElementById("mainpage")
-let arrow =document.getElementById("arrow-btn")
-setTimeout(Myfunction,4500);
-function Myfunction(){
-    laodpage.style.display="none"
-    mainpage.style.display="block"
-    arrow.style.display="block"
-}
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-/////////////////////////////////////////////////////////////////////
-var slideIndex1 = 1;
-showSlides1(slideIndex);
-
-function plusSlides1(n) {
-  showSlides1(slideIndex1 += n);
-}
-
-function currentSlide1(n) {
-  showSlides1(slideIndex1 = n);
-}
-function showSlides1(n) {
-  var i;
-  var slides1 = document.getElementsByClassName("mySlides");
-  var dots1 = document.getElementsByClassName("dot");
-  if (n > slides1.length) {slideIndex1 = 1}    
-  if (n < 1) {slideIndex1 = slides1.length}
-  for (i = 0; i < slides1.length; i++) {
-      slides1[i].style.display = "none";  
-  }
-  for (i = 0; i < dots1.length; i++) {
-      dots1[i].className = dots1[i].className.replace(" active", "");
-  }
-  slides1[slideIndex1-1].style.display = "block";  
-  dots1[slideIndex1-1].className += " active";
-}
+const tracks = document.querySelectorAll('.track');
+const panels = document.querySelectorAll('.track-panel');
+const projectSets = document.querySelectorAll('.project-set');
+tracks.forEach((track) => track.addEventListener('click', () => {
+  const selected = track.dataset.track;
+  tracks.forEach((item) => { const active = item === track; item.classList.toggle('active', active); item.setAttribute('aria-selected', active); });
+  panels.forEach((panel) => { const active = panel.id === `${selected}-panel`; panel.classList.toggle('active', active); panel.hidden = !active; });
+  projectSets.forEach((set) => { const active = set.id === `${selected}-projects`; set.classList.toggle('active', active); set.hidden = !active; });
+}));
+const menu = document.querySelector('.menu-toggle'); const nav = document.querySelector('#site-nav');
+menu.addEventListener('click', () => { const isOpen = menu.getAttribute('aria-expanded') === 'true'; menu.setAttribute('aria-expanded', String(!isOpen)); nav.classList.toggle('open', !isOpen); });
+nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { menu.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); }));
+document.querySelector('#year').textContent = new Date().getFullYear();
