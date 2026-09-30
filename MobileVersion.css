@@ -125,8 +125,8 @@ nav a{color:white}
 .hero-actions{gap:17px}
 .portrait-wrap{height:375px;grid-row:1}
 .portrait-card{height:350px;width:240px}
-.orbit-one{width:330px;height:330px}
-.orbit-two{width:385px;height:385px}
+.orbit-one{width:min(330px,calc(100vw - 40px));height:min(330px,calc(100vw - 40px))}
+.orbit-two{width:min(385px,calc(100vw - 40px));height:min(385px,calc(100vw - 40px))}
 .experience-badge{left:4%;bottom:0}
 .proof-strip{grid-template-columns:1fr 1fr;padding:17px 0;gap:13px}
 .proof-strip>div{padding-left:8px;border-right:0}
@@ -167,6 +167,5 @@ nav a{color:white}
 .contact h2{letter-spacing:-3px}
 .socials{gap:15px;margin-top:42px}
 footer{width:calc(100% - 40px);font-size:9px;gap:13px;flex-wrap:wrap}
-.ambient-one{right:-25rem}
-.ambient-two{left:-25rem}
+.ambient{display:none}
 }
